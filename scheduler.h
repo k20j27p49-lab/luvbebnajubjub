@@ -11,7 +11,6 @@ typedef struct {
     int dependency;
 } Task;
 
-/* GLOBAL VARIABLES */
 
 extern Task tasks[MAX];
 extern int taskCount;
@@ -24,13 +23,11 @@ extern int recStack[MAX];
 extern int stack[MAX];
 extern int top;
 
-/* TASK MANAGER */
 
 void addTaskFile();
 void loadTasks();
 void displayTasks();
 
-/* GRAPH */
 
 void createGraph();
 
@@ -44,7 +41,6 @@ void sortByPriority();
 
 void printTopo();
 
-/* SCHEDULER */
 
 void scheduleTasks();
 void saveSchedule();
